@@ -1,0 +1,56 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Express server for repo",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node-dev --require dotenv/config --require tsconfig-paths/register src/index.ts && ts-node-dev ",
+    "build": "tsc --project tsconfig.build.json",
+    "start": "NODE_ENV=production node --require dotenv/config ./dist/index.js",
+    "copy-typechain": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aurox-gasless-swaps/constants": "*",
+    "@aurox-gasless-swaps/contracts": "*",
+    "@aurox-gasless-swaps/services": "*",
+    "@aurox-gasless-swaps/types": "*",
+    "@flashbots/ethers-provider-bundle": "^0.5.0",
+    "@google-cloud/logging-winston": "^5.1.4",
+    "axios": "^0.27.2",
+    "bullmq": "^1.81.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.4",
+    "express": "^4.17.3",
+    "express-winston": "^4.2.0",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0",
+    "typescript": "^4.6.3",
+    "winston": "^3.8.1",
+    "zod": "^3.18.0",
+    "zod-express-middleware": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/morgan": "^1.9.3",
+    "jest": "27.0.0",
+    "ts-jest": "^27.1.4",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig": "*",
+    "tsconfig-paths": "^3.14.1"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    }
+  }
+}

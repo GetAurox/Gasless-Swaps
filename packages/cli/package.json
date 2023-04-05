@@ -1,0 +1,21 @@
+{
+  "name": "@aurox-gasless-swaps/cli",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "ts-node ./ "
+  },
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "labrysAscii.js"
+  ],
+  "dependencies": {
+    "@aurox-gasless-swaps/client": "*",
+    "@aurox-gasless-swaps/constants": "*",
+    "@aurox-gasless-swaps/services": "*",
+    "commander": "^9.2.0",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.5"
+  }
+}

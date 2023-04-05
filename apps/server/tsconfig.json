@@ -1,0 +1,13 @@
+{
+  "extends": "tsconfig/base.json",
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "baseUrl": "../../packages",
+    // this needs to list every project that is being imported from within the monorepo so we dont need to build all packages during development
+    "paths": {
+      "database": ["database/src"],
+      "consts": ["consts/src"]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@aurox-gasless-swaps/client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "npx hardhat test",
+    "build": "tsc --project tsconfig.build.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aurox-gasless-swaps/constants": "*",
+    "@aurox-gasless-swaps/services": "*",
+    "@aurox-gasless-swaps/contracts": "*",
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.9.3",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13",
+    "sinon": "^14.0.0"
+  }
+}
